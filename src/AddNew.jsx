@@ -6,7 +6,7 @@ function AddNew({ books = [], setBooks, selectedBookId, setSelectedBookId }) {
     function deleteBook() {
         if (selectedBookId) {
             const newBooks = books.filter((b) => b.id !== selectedBookId);
-            setBooks(updatedBooks);
+            setBooks(newBooks);
             setSelectedBookId(null);
         }
     }
